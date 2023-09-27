@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import FightList from './components/FightList';
 
 function App() {
+  const fights = [
+    { id: 1, fighterA: 'Fighter 1A', fighterB: 'Fighter 1B' },
+    { id: 2, fighterA: 'Fighter 2A', fighterB: 'Fighter 2B' },
+  ];
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>勝敗予想</h1>
+      <FightList fights={fights} />
     </div>
   );
 }

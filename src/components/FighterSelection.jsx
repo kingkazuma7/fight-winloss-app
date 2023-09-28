@@ -13,7 +13,7 @@ const FighterSelection = ({ fight, onSelection }) => {
     <div>
       <button onClick={() => selectFighter(fight.fighterA)}>{fight.fighterA}</button>
       <button onClick={() => selectFighter(fight.fighterB)}>{fight.fighterB}</button>
-      <p>選択： {selectedFighter}</p>
+      <p>選択した選手： {selectedFighter}</p>
     </div>
   )
 }

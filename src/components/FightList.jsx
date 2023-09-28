@@ -18,7 +18,7 @@ const FightList = ({ fights }) => {
           onSelection={(fighter) => handleSelection(fight.id, fighter)}
         />
       ))}
-      <FightSummary />
+      <FightSummary selections={selections} />
     </div>
   )
 }

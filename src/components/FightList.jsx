@@ -10,15 +10,15 @@ const FightList = ({ fights }) => {
   )
   
   return (
-    <div>
-      {fights.map((fight) => (
+      <div>
+        {fights.map((fight) => (
         <FighterSelection
           key={fight.id}
           fight={fight}
           onSelection={(fighter) => handleSelection(fight.id, fighter)}
         />
       ))}
-      <FightSummary selections={selections} />
+      {/* <FightSummary selections={selections} /> */}
     </div>
   )
 }
